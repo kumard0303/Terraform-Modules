@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"vpc","Source":"../modules/vpc","Dir":"../modules/vpc"},{"Key":"nat_gateway","Source":"../modules/nat-gateway","Dir":"../modules/nat-gateway"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"vpc","Source":"../modules/vpc","Dir":"../modules/vpc"},{"Key":"nat_gateway","Source":"../modules/nat-gateway","Dir":"../modules/nat-gateway"},{"Key":"security_group","Source":"../modules/security-groups","Dir":"../modules/security-groups"}]}

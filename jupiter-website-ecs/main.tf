@@ -36,4 +36,9 @@ module "security_group" {
   vpc_id = module.vpc.vpc_id 
 }
 
+module "ecs-task-execution-role" {
+  source           = "../modules/ecs-task-execution-role"
+  project_name     = module.vpc.project_name
+}
+
 # This is the end of file.

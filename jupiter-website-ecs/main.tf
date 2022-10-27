@@ -41,4 +41,11 @@ module "ecs-task-execution-role" {
   project_name     = module.vpc.project_name
 }
 
+module "elasticCache-redis" {
+  source                = "../modules/elsticCache-redis"
+  project_name          = module.vpc.project_name
+}
+
+
+
 # This is the end of file.

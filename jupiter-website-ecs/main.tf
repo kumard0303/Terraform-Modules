@@ -47,7 +47,8 @@ module "elasticCache-redis" {
 }
 
 
-module "application_load_balancer" {
+
+/* module "application_load_balancer" {
   source                    = "../modules/alb"
   project_name              = module.vpc.project_name
   alb_security_group_id     = module.security_group.alb_security_group_id
@@ -56,6 +57,10 @@ module "application_load_balancer" {
   vpc_id                    = module.vpc.vpc_id
   certificate_arn           = module.acm.certificate_arn #need to create it yet
 }
-
+ */
+module "dns" {
+  source = "../modules/DNS"
+  dns_name = var.dns_name
+}
 
 # This is the end of file.
